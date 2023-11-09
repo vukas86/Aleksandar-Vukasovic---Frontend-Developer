@@ -1,0 +1,6 @@
+.background {
+  height: 100%;
+  background: url("../../assets/bg/bannerBg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
