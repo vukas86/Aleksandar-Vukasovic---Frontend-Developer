@@ -1,7 +1,15 @@
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import Search from "./components/Search";
+import Main from "./components/Main";
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello Worlda</h1>
+      <Navbar />
+      <Banner />
+      <Search />
+      <Main />
     </div>
   );
 }
