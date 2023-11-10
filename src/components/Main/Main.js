@@ -18,12 +18,14 @@ function Main() {
 
   return (
     <article className={styles.mainContainer}>
-      <section>
-        {rockets.map((rocket) => {
-          <div key={rocket.id}>
+      <section className={styles.mainSection}>
+        {rockets.map((rocket) => (
+          <div key={rocket.id} className={styles.mainCard}>
+            <img src={rocket.flickr_images[0]} alt={rocket.name}></img>
             <h3>{rocket.name}</h3>
-          </div>;
-        })}
+            <p>{rocket.description}</p>
+          </div>
+        ))}
       </section>
     </article>
   );
