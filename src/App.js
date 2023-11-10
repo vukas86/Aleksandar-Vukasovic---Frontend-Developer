@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner/Banner";
 import Search from "./components/Search";
-import Main from "./components/Main";
+import Main from "./components/Main/Main";
 
 function App() {
   return (

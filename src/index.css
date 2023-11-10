@@ -58,3 +58,33 @@ body {
 .Btn:active {
   transform: scale(0.95);
 }
+
+.searchContainer {
+  text-align: center;
+  margin-top: 100px;
+  border-top: 4px solid rgb(54, 47, 47);
+  padding-top: 25px;
+}
+
+.search {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 8px 200px 10px 18px;
+  border: 3px solid rgba(23, 197, 232, 1);
+  -webkit-border-radius: 22px;
+  border-radius: 22px;
+  color: white;
+  text-indent: 7px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  word-spacing: 4px;
+  background: #260034;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
+  -webkit-transition: all 201ms cubic-bezier(0.95, 0.05, 0.795, 0.035) 4ms;
+  -moz-transition: all 201ms cubic-bezier(0.95, 0.05, 0.795, 0.035) 4ms;
+  -o-transition: all 201ms cubic-bezier(0.95, 0.05, 0.795, 0.035) 4ms;
+  transition: all 201ms cubic-bezier(0.95, 0.05, 0.795, 0.035) 4ms;
+  margin: 0 auto;
+}
