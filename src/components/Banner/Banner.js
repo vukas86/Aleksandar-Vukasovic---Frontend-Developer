@@ -4,7 +4,7 @@ import styles from "./Banner.module.css";
 function Banner() {
   return (
     <div className={styles.background}>
-      <article>
+      <article className={styles.bannerArticle}>
         <BannerModal />
       </article>
     </div>
