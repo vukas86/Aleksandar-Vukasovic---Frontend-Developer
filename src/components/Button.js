@@ -1,6 +1,15 @@
-const Button = ({ background, buttonText }) => {
+const Button = ({
+  background,
+  buttonText,
+  margin,
+  marginTop,
+  marginBottom,
+}) => {
   const buttonStyle = {
     background: background,
+    margin: margin,
+    marginTop: marginTop,
+    marginBottom: marginBottom,
   };
 
   return (

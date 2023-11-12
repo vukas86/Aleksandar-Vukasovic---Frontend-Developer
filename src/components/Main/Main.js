@@ -23,13 +23,17 @@ function Main() {
       <section className={styles.mainSection}>
         {rockets.map((rocket) => (
           <div key={rocket.id} className={styles.mainCard}>
-            <img src={rocket.flickr_images[0]} alt={rocket.name}></img>
-            <h3>{rocket.name}</h3>
-            <p>{rocket.description}</p>
+            <div className={styles.upperCardPart}>
+              <img src={rocket.flickr_images[0]} alt={rocket.name}></img>
+              <h3>{rocket.name}</h3>
+              <p>{rocket.description}</p>
+            </div>
             <Button
               background="white"
               buttonText="READ MORE"
-              className={styles.mainBtn}
+              margin="0 auto"
+              marginTop="20px"
+              marginBottom="20px"
             />
           </div>
         ))}
