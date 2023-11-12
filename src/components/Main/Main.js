@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import Button from "../Button";
+
 import styles from "./Main.module.css";
 
 function Main() {
@@ -24,6 +26,11 @@ function Main() {
             <img src={rocket.flickr_images[0]} alt={rocket.name}></img>
             <h3>{rocket.name}</h3>
             <p>{rocket.description}</p>
+            <Button
+              background="white"
+              buttonText="READ MORE"
+              className={styles.mainBtn}
+            />
           </div>
         ))}
       </section>

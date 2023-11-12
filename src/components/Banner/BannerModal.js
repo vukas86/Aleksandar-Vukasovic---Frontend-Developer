@@ -12,7 +12,10 @@ function BannerModal() {
             Explore launch, history, status and many more with our app.
           </p>
         </div>
-        <Button />
+        <Button
+          background=" linear-gradient(to right, #feac5e, #c779d0, #4bc0c8)"
+          buttonText="EXPLORE"
+        />
       </div>
     </>
   );
