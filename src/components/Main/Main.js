@@ -5,6 +5,12 @@ import styles from "./Main.module.css";
 
 function Main() {
   const [rockets, setRockets] = useState([]);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+    console.log("opened modal");
+  };
 
   useEffect(() => {
     const fetchRockets = async () => {
@@ -34,6 +40,7 @@ function Main() {
               margin="0 auto"
               marginTop="20px"
               marginBottom="20px"
+              onClick={openModal}
             />
           </div>
         ))}

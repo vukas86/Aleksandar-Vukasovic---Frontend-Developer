@@ -4,6 +4,7 @@ const Button = ({
   margin,
   marginTop,
   marginBottom,
+  onClick,
 }) => {
   const buttonStyle = {
     background: background,
@@ -13,7 +14,12 @@ const Button = ({
   };
 
   return (
-    <button className="Btn" style={buttonStyle} data-text={buttonText}></button>
+    <button
+      className="Btn"
+      style={buttonStyle}
+      data-text={buttonText}
+      onClick={onClick}
+    ></button>
   );
 };
 
