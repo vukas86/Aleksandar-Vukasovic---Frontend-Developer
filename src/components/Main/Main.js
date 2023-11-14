@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Button from "../Button";
+import Modal from "../Modal";
 
 import styles from "./Main.module.css";
 
@@ -9,7 +10,6 @@ function Main() {
 
   const openModal = () => {
     setModalOpen(true);
-    console.log("opened modal");
   };
 
   useEffect(() => {
@@ -21,8 +21,6 @@ function Main() {
 
     fetchRockets();
   }, []);
-
-  console.log(rockets);
 
   return (
     <article className={styles.mainContainer}>
@@ -45,6 +43,7 @@ function Main() {
           </div>
         ))}
       </section>
+      <section>{modalOpen && <Modal closeModal={setModalOpen} />}</section>
     </article>
   );
 }
