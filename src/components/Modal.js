@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 import styles from "./Modal.module.css";
 
 import rocket1 from "../assets/bg/rocket1.jpg";
@@ -25,18 +27,22 @@ function Modal({ closeModal }) {
       <div className={styles.modalContainer}>
         <section className={styles.infoPart}>
           <h1>
-            Name: <span>Falcon</span>
+            NAME: <br /> <span>Falcon</span>
           </h1>
           <p>
-            Type: <span>Rocket</span>
+            TYPE: <br /> <span>Rocket</span>
           </p>
           <p>
-            Country: <span>USA</span>
+            COUNTRY: <br /> <span>USA</span>
           </p>
           <p>
-            First Flight: <span>05/12/2021</span>
+            FIRST FLIGHT: <br /> <span>05/12/2021</span>
           </p>
-          <button onClick={() => closeModal(false)}> Close </button>
+          <Button
+            onClick={() => closeModal(false)}
+            background="blue"
+            buttonText="CLOSE"
+          />
         </section>
         <div className={styles.imagesSection}>
           {selectedImage !== null && (
