@@ -1,13 +1,11 @@
 import Button from "./Button";
+import { useState } from "react";
 
 import styles from "./Modal.module.css";
 
-import rocket1 from "../assets/bg/rocket1.jpg";
-import rocket2 from "../assets/bg/rocket2.jpg";
-import { useState } from "react";
-
-function Modal({ closeModal }) {
-  const [selectedImage, setSelectedImage] = useState(0);
+function Modal({ closeModal, selectedRocket }) {
+  const images = selectedRocket.flickr_images;
+  const [selectedImage, setSelectedImage] = useState(images[0]);
 
   const handleCloseModal = (e) => {
     e.preventDefault();
@@ -16,24 +14,22 @@ function Modal({ closeModal }) {
     }
   };
 
-  const handleImageClick = (index) => {
-    setSelectedImage(index);
+  const handleImageClick = (url) => {
+    setSelectedImage(url);
   };
-
-  const images = [rocket1, rocket2];
 
   return (
     <div className={styles.modalBackground} onClick={handleCloseModal}>
       <div className={styles.modalContainer}>
         <section className={styles.infoPart}>
           <h1>
-            NAME: <br /> <span>Falcon</span>
+            NAME: <br /> <span>{selectedRocket.name}</span>
           </h1>
           <p>
-            TYPE: <br /> <span>Rocket</span>
+            TYPE: <br /> <span>{selectedRocket.type}</span>
           </p>
           <p>
-            COUNTRY: <br /> <span>USA</span>
+            COUNTRY: <br /> <span>{selectedRocket.country}</span>
           </p>
           <p>
             FIRST FLIGHT: <br /> <span>05/12/2021</span>
@@ -48,21 +44,20 @@ function Modal({ closeModal }) {
           {selectedImage !== null && (
             <section className={styles.selectedImageSection}>
               <img
-                src={images[selectedImage]}
+                src={selectedImage}
                 alt={`Rocket ${selectedImage + 1}`}
                 className={styles.selectedImage}
               />
             </section>
           )}
           <section className={styles.imagesPart}>
-            {images.map((image, index) => (
+            {selectedRocket.flickr_images.map((image, index) => (
               <img
                 key={index}
                 src={image}
                 alt={`Rocket ${index + 1}`}
-                // className={selectedImage === index ? styles.selectedImage : ""}
                 className={styles.tmbImg}
-                onClick={() => handleImageClick(index)}
+                onClick={() => handleImageClick(image)}
               />
             ))}
           </section>

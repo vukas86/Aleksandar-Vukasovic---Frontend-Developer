@@ -1,3 +1,6 @@
+import { useDispatch } from "react-redux";
+import { selectRocket } from "../store/rocketsSlice";
+
 const Button = ({
   background,
   buttonText,
@@ -5,7 +8,16 @@ const Button = ({
   marginTop,
   marginBottom,
   onClick,
+  rocket,
 }) => {
+  const dispatch = useDispatch();
+
+  const handleButtonClick = () => {
+    dispatch(selectRocket(rocket));
+    if (onClick) {
+      onClick();
+    }
+  };
   const buttonStyle = {
     background: background,
     margin: margin,
@@ -18,7 +30,7 @@ const Button = ({
       className="Btn"
       style={buttonStyle}
       data-text={buttonText}
-      onClick={onClick}
+      onClick={handleButtonClick}
     ></button>
   );
 };
