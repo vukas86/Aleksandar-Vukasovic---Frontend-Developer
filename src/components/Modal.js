@@ -1,5 +1,6 @@
 import Button from "./Button";
 import { useState } from "react";
+import moment from "moment";
 
 import styles from "./Modal.module.css";
 
@@ -18,6 +19,8 @@ function Modal({ closeModal, selectedRocket }) {
     setSelectedImage(url);
   };
 
+  const formatter = new Intl.NumberFormat("pt-BR");
+
   return (
     <div className={styles.modalBackground} onClick={handleCloseModal}>
       <div className={styles.modalContainer}>
@@ -26,13 +29,17 @@ function Modal({ closeModal, selectedRocket }) {
             NAME: <br /> <span>{selectedRocket.name}</span>
           </h1>
           <p>
-            TYPE: <br /> <span>{selectedRocket.type}</span>
+            MASS (kg): <br />{" "}
+            <span>{formatter.format(selectedRocket.mass.kg)}</span>
           </p>
           <p>
             COUNTRY: <br /> <span>{selectedRocket.country}</span>
           </p>
           <p>
-            FIRST FLIGHT: <br /> <span>05/12/2021</span>
+            FIRST FLIGHT: <br />{" "}
+            <span>
+              {moment(selectedRocket.first_flight).format("DD/MM/YYYY")}
+            </span>
           </p>
           <Button
             onClick={() => closeModal(false)}

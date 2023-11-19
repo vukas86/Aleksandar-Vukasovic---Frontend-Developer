@@ -14,7 +14,7 @@
 
 .modalContainer {
   color: white;
-  width: 600px;
+  width: 625px;
   max-height: 100%;
   overflow: auto;
   border: 2px solid white;
@@ -22,8 +22,6 @@
   background-color: #302932;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
   padding: 20px;
 }
 
@@ -38,7 +36,7 @@
 .infoPart {
   color: orange;
   font-size: 20px;
-  margin: 9px;
+  margin: 15px;
 }
 .infoPart span {
   color: white;
