@@ -27,11 +27,19 @@ function Main() {
     openModal();
   };
 
+  const searchRockets = () => {
+    if (!rocketsData.data) return [];
+
+    return rocketsData.data.filter((rocket) =>
+      rocket.name.toLowerCase().includes(rocketsData.searchTerm.toLowerCase())
+    );
+  };
+
   return (
     <article className={styles.mainContainer}>
       <section className={styles.mainSection}>
-        {rocketsData &&
-          rocketsData.data.map((rocket) => (
+        {rocketsData && searchRockets().length > 0 ? (
+          searchRockets().map((rocket) => (
             <div key={rocket.id} className={styles.mainCard}>
               <div className={styles.upperCardPart}>
                 <img src={rocket.flickr_images[0]} alt={rocket.name}></img>
@@ -47,7 +55,14 @@ function Main() {
                 onClick={() => handleButtonClick(rocket)}
               />
             </div>
-          ))}
+          ))
+        ) : (
+          <div className={styles.searchInfoContainer}>
+            <div className={styles.searchInfo}>
+              <h1>No Search Results</h1>
+            </div>
+          </div>
+        )}
       </section>
       <section>
         {modalOpen && (

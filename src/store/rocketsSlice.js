@@ -17,10 +17,13 @@ export const fetchRockets = createAsyncThunk(
 
 const rocketSlice = createSlice({
   name: "rockets",
-  initialState: { data: [], loading: false, error: null },
+  initialState: { data: [], loading: false, error: null, searchTerm: "" },
   reducers: {
     selectRocket: (state, action) => {
       state.selectedRocket = action.payload;
+    },
+    updateSearchTerm: (state, action) => {
+      state.searchTerm = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -40,5 +43,5 @@ const rocketSlice = createSlice({
   },
 });
 
-export const { selectRocket } = rocketSlice.actions;
+export const { selectRocket, updateSearchTerm } = rocketSlice.actions;
 export default rocketSlice.reducer;
