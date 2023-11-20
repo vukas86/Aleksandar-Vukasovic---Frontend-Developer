@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Banner from "./components/Banner/Banner";
 import Search from "./components/Search";
 import Main from "./components/Main/Main";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Banner />
       <Search />
       <Main />
+      <Footer />
     </div>
   );
 }
