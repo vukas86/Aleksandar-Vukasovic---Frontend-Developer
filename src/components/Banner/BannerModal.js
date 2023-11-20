@@ -2,6 +2,11 @@ import Button from "../Button";
 import styles from "./BannerModal.module.css";
 
 function BannerModal() {
+  const scrollToMain = () => {
+    const mainSection = document.getElementById("main-section");
+    mainSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div className={styles.bannerModal}>
@@ -15,6 +20,7 @@ function BannerModal() {
         <Button
           background=" linear-gradient(to right, #feac5e, #c779d0, #4bc0c8)"
           buttonText="EXPLORE"
+          onClick={scrollToMain}
         />
       </div>
     </>

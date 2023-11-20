@@ -10,7 +10,7 @@ function Search() {
   };
 
   return (
-    <section className="searchContainer">
+    <section className="searchContainer" id="main-section">
       <input
         type="search"
         className="search"
