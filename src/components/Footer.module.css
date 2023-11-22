@@ -7,8 +7,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  position: relative;
+  flex: 0 0 50px;
+  margin-top: auto;
 }
 
 .footerIcon {
   margin-right: 15px;
+}
+
+@media only screen and (max-width: 550px),
+  only screen and (max-device-width: 550px) {
+  .footerContainer {
+    width: 100%;
+  }
 }
