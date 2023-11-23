@@ -34,6 +34,7 @@
 .bannerModalContainer h1 {
   background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 @media only screen and (max-width: 550px),
@@ -48,8 +49,8 @@
     font-size: 12px;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    hyphens: auto;
     -webkit-hyphens: auto;
+    hyphens: auto;
     white-space: normal;
   }
 
