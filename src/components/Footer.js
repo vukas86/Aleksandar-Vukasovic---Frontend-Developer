@@ -1,10 +1,18 @@
-import styles from "./Footer.module.css";
+import AOS from "aos";
 import github from "../assets/icons/gh.svg";
 import linkedin from "../assets/icons/ln.svg";
 
+import styles from "./Footer.module.css";
+import "aos/dist/aos.css";
+
 function Footer() {
+  AOS.init({ once: true });
   return (
-    <section className={styles.footerContainer}>
+    <section
+      className={styles.footerContainer}
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+    >
       <div>
         &copy; {new Date().getFullYear()} <span>aleksandarvukasovic</span>
       </div>

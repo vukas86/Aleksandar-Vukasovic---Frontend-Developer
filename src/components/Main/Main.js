@@ -3,14 +3,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchRockets } from "../../store/rocketsSlice";
 import Button from "../Button";
 import Modal from "../Modal";
+import AOS from "aos";
 
 import styles from "./Main.module.css";
+import "aos/dist/aos.css";
 
 function Main() {
   const dispatch = useDispatch();
   const rocketsData = useSelector((state) => state.rockets);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedRocket, setSelectedRocket] = useState(null);
+
+  AOS.init({ once: true });
 
   const openModal = () => {
     setModalOpen(true);
@@ -37,7 +41,12 @@ function Main() {
 
   return (
     <article className={styles.mainContainer}>
-      <section className={styles.mainSection}>
+      <section
+        className={styles.mainSection}
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         {rocketsData && searchRockets().length > 0 ? (
           searchRockets().map((rocket) => (
             <div key={rocket.id} className={styles.mainCard}>
