@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+<h1 align="center" id="title">🚀 Rocketseeker</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img src="https://socialify.git.ci/vukas86/rocketseeker/image?font=Source%20Code%20Pro&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Solid&amp;theme=Dark" alt="project-image"></p>
 
-## Available Scripts
+<p id="description">Rocket Seeker is an app powered by React designed to provide you with real-time information about rockets from SpaceX. App is allowing you to discover rockets data. Modern and responsive design ensures an immersive experience on any device while optimized queries guarantee lightning-fast results. Explore discover and embark on your space journey today!</p>
 
-In the project directory, you can run:
+<h2>🚀 Demo</h2>
 
-### `npm start`
+[https://rocketseeker.vercel.app/](https://rocketseeker.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2>Project Screenshots:</h2>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="https://i.postimg.cc/g2p34k85/rs-removebg-preview.png" alt="project-screenshot" />
 
-### `npm test`
+<h2>🧐 Features</h2>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here're some of the project's best features:
 
-### `npm run build`
+- The app displays information about SpaceX rockets.
+- Users can perform searches within the app.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2>🛠️ Installation Steps:</h2>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p>1. Clone this repo</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+https://github.com/vukas86/rocketseeker.git
+```
 
-### `npm run eject`
+<p>2. Navigate to the project</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+cd rocketseeker
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p>3. Install the dependencies</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h2>💻 Built with</h2>
 
-## Learn More
+Technologies used in the project:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React
+- React Redux
+- Framer Motion
+- AOS
+- Moment<h1 align="center" id="title">🚀 Rocketseeker</h1>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="center"><img src="https://socialify.git.ci/vukas86/rocketseeker/image?font=Source%20Code%20Pro&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Solid&amp;theme=Dark" alt="project-image"></p>
 
-### Code Splitting
+<p id="description">Rocket Seeker is an app powered by React designed to provide you with real-time information about rockets from SpaceX. App is allowing you to discover rockets data. Modern and responsive design ensures an immersive experience on any device while optimized queries guarantee lightning-fast results. Explore discover and embark on your space journey today!</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<h2>Demo</h2>
 
-### Analyzing the Bundle Size
+[https://rocketseeker.vercel.app/](https://rocketseeker.vercel.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<h2>Project Screenshots:</h2>
 
-### Making a Progressive Web App
+<img src="https://i.postimg.cc/g2p34k85/rs-removebg-preview.png" alt="project-screenshot" width="700" height="500/">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<h2>🧐 Features</h2>
 
-### Advanced Configuration
+Here're some of the project's best features:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- The app displays information about SpaceX rockets.
+- Users can perform searches within the app.
 
-### Deployment
+<h2>🛠️ Installation Steps:</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<p>1. Clone this repo</p>
 
-### `npm run build` fails to minify
+```
+https://github.com/vukas86/rocketseeker.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p>2. Navigate to the project</p>
+
+```
+cd rocketseeker
+```
+
+<p>3. Install the dependencies</p>
+
+```
+npm install
+```
+
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+- React
+- React Redux
+- Framer Motion
+- AOS
+- Moment
