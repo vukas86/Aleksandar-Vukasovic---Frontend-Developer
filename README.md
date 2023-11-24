@@ -10,7 +10,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://i.postimg.cc/g2p34k85/rs-removebg-preview.png" alt="project-screenshot" width="700" height="500/">
+<img src="https://i.postimg.cc/g2p34k85/rs-removebg-preview.png" alt="project-screenshot" />
 
 <h2>🧐 Features</h2>
 
