@@ -10,6 +10,7 @@
   position: relative;
   flex: 0 0 50px;
   margin-top: auto;
+  z-index: -1;
 }
 
 .footerIcon {
